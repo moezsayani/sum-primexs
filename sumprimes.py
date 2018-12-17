@@ -5,7 +5,7 @@ def primes_sieve(limit):
     for i in range (2, limitn):
         if not_prime[i]:
             continue
-        for j in xrange(i*2, limitn, i):
+        for j in range(i*2, limitn, i):
             not_prime[j] = True
         primes.append(i)
     return primes
